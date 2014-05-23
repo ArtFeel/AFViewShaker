@@ -4,6 +4,8 @@ AFViewShaker
 ## About
 AFViewShaker is simple as a brick utility for UIView shake animation.
 
+![](example.gif)
+
 ## Using
 ##### Create shaker for one view
 ```objective-c
