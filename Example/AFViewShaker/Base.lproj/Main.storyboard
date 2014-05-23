@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier View Controller-->
+        <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="AFViewController" sceneMemberID="viewController">
@@ -15,8 +15,117 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="user@mail.com" placeholder="E-mail" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mnf-GL-huo" userLabel="E-mail Text Field">
+                                <rect key="frame" x="50" y="60" width="220" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Lgp-1J-0eB"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o0d-AE-AYH" userLabel="Separator View">
+                                <rect key="frame" x="50" y="100" width="220" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="69z-27-FYm"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="assking" placeholder="Password" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="QxM-vV-qa1" userLabel="Password Text Field">
+                                <rect key="frame" x="50" y="110" width="220" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cPc-XZ-FWY" userLabel="Separator View">
+                                <rect key="frame" x="50" y="150" width="220" height="1"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="sR1-Gk-zVM"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGD-V7-5f9">
+                                <rect key="frame" x="50" y="190" width="220" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="34S-Hb-RDT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Shake One">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onShakeOneAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ErN-Dh-uSl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Cw-0w-NTh">
+                                <rect key="frame" x="50" y="240" width="220" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Shake All Fields">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onShakeAllAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ybp-mk-AF0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iy5-j7-K3S">
+                                <rect key="frame" x="50" y="291" width="220" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <state key="normal" title="Shake All With Completion">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onShakeAllWithBlockAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IdR-Xc-2Ri"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Iy5-j7-K3S" firstAttribute="top" secondItem="0Cw-0w-NTh" secondAttribute="bottom" constant="10" id="2aw-ZW-dFU"/>
+                            <constraint firstItem="QxM-vV-qa1" firstAttribute="top" secondItem="mnf-GL-huo" secondAttribute="bottom" constant="10" id="94H-m7-Xhz"/>
+                            <constraint firstItem="cPc-XZ-FWY" firstAttribute="leading" secondItem="QxM-vV-qa1" secondAttribute="leading" id="ANy-Lm-b9b"/>
+                            <constraint firstItem="pGD-V7-5f9" firstAttribute="top" secondItem="QxM-vV-qa1" secondAttribute="bottom" constant="40" id="ASg-9R-bI5"/>
+                            <constraint firstItem="o0d-AE-AYH" firstAttribute="trailing" secondItem="mnf-GL-huo" secondAttribute="trailing" id="AcK-Lq-wDg"/>
+                            <constraint firstItem="cPc-XZ-FWY" firstAttribute="trailing" secondItem="QxM-vV-qa1" secondAttribute="trailing" id="BbD-Ml-ARs"/>
+                            <constraint firstItem="mnf-GL-huo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="50" id="DpD-3d-yqR"/>
+                            <constraint firstItem="Iy5-j7-K3S" firstAttribute="height" secondItem="0Cw-0w-NTh" secondAttribute="height" id="E2Y-sE-D5E"/>
+                            <constraint firstItem="QxM-vV-qa1" firstAttribute="leading" secondItem="pGD-V7-5f9" secondAttribute="leading" id="Eq0-vj-Ohf"/>
+                            <constraint firstItem="cPc-XZ-FWY" firstAttribute="top" secondItem="QxM-vV-qa1" secondAttribute="bottom" id="Ky2-dB-KnB"/>
+                            <constraint firstItem="0Cw-0w-NTh" firstAttribute="top" secondItem="pGD-V7-5f9" secondAttribute="bottom" constant="10" id="PAo-co-A5d"/>
+                            <constraint firstItem="mnf-GL-huo" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="40" id="Qvv-zp-7hL"/>
+                            <constraint firstItem="QxM-vV-qa1" firstAttribute="trailing" secondItem="pGD-V7-5f9" secondAttribute="trailing" id="UNe-VC-Ed9"/>
+                            <constraint firstItem="o0d-AE-AYH" firstAttribute="leading" secondItem="mnf-GL-huo" secondAttribute="leading" id="Uof-AM-jCL"/>
+                            <constraint firstItem="o0d-AE-AYH" firstAttribute="top" secondItem="mnf-GL-huo" secondAttribute="bottom" id="Wtv-A9-Nxg"/>
+                            <constraint firstItem="mnf-GL-huo" firstAttribute="height" secondItem="QxM-vV-qa1" secondAttribute="height" id="Y3a-ae-76Q"/>
+                            <constraint firstItem="0Cw-0w-NTh" firstAttribute="trailing" secondItem="pGD-V7-5f9" secondAttribute="trailing" id="a96-y6-0jW"/>
+                            <constraint firstItem="0Cw-0w-NTh" firstAttribute="leading" secondItem="pGD-V7-5f9" secondAttribute="leading" id="dOq-UY-whk"/>
+                            <constraint firstItem="mnf-GL-huo" firstAttribute="trailing" secondItem="QxM-vV-qa1" secondAttribute="trailing" id="g8g-IM-u41"/>
+                            <constraint firstItem="Iy5-j7-K3S" firstAttribute="trailing" secondItem="0Cw-0w-NTh" secondAttribute="trailing" id="h14-Cw-lCg"/>
+                            <constraint firstItem="Iy5-j7-K3S" firstAttribute="leading" secondItem="0Cw-0w-NTh" secondAttribute="leading" id="pBV-xn-mRp"/>
+                            <constraint firstItem="0Cw-0w-NTh" firstAttribute="height" secondItem="pGD-V7-5f9" secondAttribute="height" id="t9c-Ss-MjC"/>
+                            <constraint firstItem="mnf-GL-huo" firstAttribute="leading" secondItem="QxM-vV-qa1" secondAttribute="leading" id="w1n-8N-O3q"/>
+                            <constraint firstAttribute="trailing" secondItem="mnf-GL-huo" secondAttribute="trailing" constant="50" id="xDP-AA-z6d"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="allButtons" destination="pGD-V7-5f9" id="dT3-0p-9oW"/>
+                        <outletCollection property="allButtons" destination="0Cw-0w-NTh" id="aC3-rW-a5f"/>
+                        <outletCollection property="allButtons" destination="Iy5-j7-K3S" id="h5X-W7-35B"/>
+                        <outletCollection property="allTextFields" destination="mnf-GL-huo" id="Sdv-ac-pO1"/>
+                        <outletCollection property="allTextFields" destination="o0d-AE-AYH" id="oKm-25-gWO"/>
+                        <outletCollection property="allTextFields" destination="QxM-vV-qa1" id="s3m-Yr-Mk2"/>
+                        <outletCollection property="allTextFields" destination="cPc-XZ-FWY" id="aip-di-hRV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

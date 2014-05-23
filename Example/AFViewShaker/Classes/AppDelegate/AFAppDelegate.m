@@ -12,6 +12,7 @@
 @implementation AFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.window.tintColor = [UIColor whiteColor];
     return YES;
 }
 
