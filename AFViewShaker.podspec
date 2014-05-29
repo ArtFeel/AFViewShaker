@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "AFViewShaker"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "AFViewShaker is simple as a brick utility for UIView shake animation."
   s.homepage     = "https://github.com/ArtFeel/AFViewShaker"
   s.screenshots  = "https://raw.githubusercontent.com/ArtFeel/AFViewShaker/master/example.gif"
