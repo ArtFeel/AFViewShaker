@@ -29,3 +29,11 @@ AFViewShaker * viewShaker = [[AFViewShaker alloc] initWithViewsArray:allFields];
     NSLog(@"Hello World!");
 }];
 ```
+
+## Installation with CocoaPods
+[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like AFViewShaker in your projects.  
+
+##### Podfile
+```ruby
+pod "AFViewShaker", "~> 0.0.2"
+```
