@@ -37,3 +37,6 @@ AFViewShaker * viewShaker = [[AFViewShaker alloc] initWithViewsArray:allFields];
 ```ruby
 pod "AFViewShaker", "~> 0.0.2"
 ```
+
+## For Xamarin users
+If you are using [Xamarin.iOS](https://xamarin.com), check out [this](https://github.com/robert-waggott/Xamarin.ViewShaker) port by [Robert Waggott](https://github.com/robert-waggott).
