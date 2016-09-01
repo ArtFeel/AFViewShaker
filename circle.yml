@@ -2,6 +2,10 @@ machine:
   xcode:
     version: "7.3"
 
+dependencies:
+  pre:
+    - brew uninstall xctool && brew install xctool
+
 test:
   override:
     - xctool
