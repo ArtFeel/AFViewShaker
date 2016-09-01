@@ -1,0 +1,5 @@
+general:
+  build_dir: Example
+machine:
+  xcode:
+    version: 7.3
