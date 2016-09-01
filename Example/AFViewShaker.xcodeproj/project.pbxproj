@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		66273C35192F5F630088189A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66273C34192F5F630088189A /* XCTest.framework */; };
-		66273C36192F5F630088189A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66273C15192F5F630088189A /* Foundation.framework */; };
-		66273C37192F5F630088189A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66273C19192F5F630088189A /* UIKit.framework */; };
 		DDAEB0E51D788F270076D17C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66273C21192F5F630088189A /* main.m */; };
 		DDAEB0E61D788F270076D17C /* AFViewShaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 66273C4C192F61080088189A /* AFViewShaker.m */; };
 		DDAEB0E71D788F270076D17C /* AFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D45775DF59242252864A5FE9 /* AFViewController.m */; };
@@ -22,15 +19,17 @@
 		DDAEB0F01D788F270076D17C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D45776440ACC1ACCE76D0E63 /* Main.storyboard */; };
 		DDAEB1081D788FD30076D17C /* AFViewShaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 66273C4C192F61080088189A /* AFViewShaker.m */; };
 		DDAEB1091D788FD90076D17C /* AFViewShaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 66273C4B192F61080088189A /* AFViewShaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDAEB1131D78AF430076D17C /* AFViewShakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAEB1121D78AF430076D17C /* AFViewShakerTests.m */; };
+		DDAEB1151D78AF430076D17C /* AFViewShaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDAEB0FB1D788F6A0076D17C /* AFViewShaker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DDAEB10A1D7890580076D17C /* PBXContainerItemProxy */ = {
+		DDAEB1161D78AF430076D17C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 66273C0A192F5F630088189A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = DDAEB0E31D788F270076D17C;
-			remoteInfo = AFViewShakerExample;
+			remoteGlobalIDString = DDAEB0FA1D788F6A0076D17C;
+			remoteInfo = AFViewShaker;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -42,7 +41,6 @@
 		66273C1F192F5F630088189A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		66273C21192F5F630088189A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66273C23192F5F630088189A /* AFViewShaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFViewShaker-Prefix.pch"; sourceTree = "<group>"; };
-		66273C33192F5F630088189A /* AFViewShakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFViewShakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66273C34192F5F630088189A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		66273C4B192F61080088189A /* AFViewShaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFViewShaker.h; sourceTree = "<group>"; };
 		66273C4C192F61080088189A /* AFViewShaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFViewShaker.m; sourceTree = "<group>"; };
@@ -55,19 +53,12 @@
 		DDAEB0F41D788F270076D17C /* AFViewShakerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFViewShakerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAEB0FB1D788F6A0076D17C /* AFViewShaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFViewShaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAEB0FF1D788F6A0076D17C /* AFViewShaker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "AFViewShaker-Info.plist"; path = "../Example/AFViewShaker/AFViewShaker-Info.plist"; sourceTree = "<group>"; };
+		DDAEB1101D78AF430076D17C /* AFViewShakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFViewShakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDAEB1121D78AF430076D17C /* AFViewShakerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFViewShakerTests.m; sourceTree = "<group>"; };
+		DDAEB1141D78AF430076D17C /* AFViewShakerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFViewShakerTests-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		66273C30192F5F630088189A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				66273C35192F5F630088189A /* XCTest.framework in Frameworks */,
-				66273C37192F5F630088189A /* UIKit.framework in Frameworks */,
-				66273C36192F5F630088189A /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DDAEB0E91D788F270076D17C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -85,6 +76,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DDAEB10D1D78AF430076D17C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDAEB1151D78AF430076D17C /* AFViewShaker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -93,6 +92,7 @@
 			children = (
 				66273C4A192F60A80088189A /* AFViewShaker */,
 				66273C1B192F5F630088189A /* AFViewShakerExample */,
+				DDAEB1111D78AF430076D17C /* AFViewShakerTests */,
 				66273C14192F5F630088189A /* Frameworks */,
 				66273C13192F5F630088189A /* Products */,
 			);
@@ -101,9 +101,9 @@
 		66273C13192F5F630088189A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66273C33192F5F630088189A /* AFViewShakerTests.xctest */,
 				DDAEB0F41D788F270076D17C /* AFViewShakerExample.app */,
 				DDAEB0FB1D788F6A0076D17C /* AFViewShaker.framework */,
+				DDAEB1101D78AF430076D17C /* AFViewShakerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,6 +188,15 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		DDAEB1111D78AF430076D17C /* AFViewShakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				DDAEB1121D78AF430076D17C /* AFViewShakerTests.m */,
+				DDAEB1141D78AF430076D17C /* AFViewShakerTests-Info.plist */,
+			);
+			path = AFViewShakerTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -202,24 +211,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		66273C32192F5F630088189A /* AFViewShakerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 66273C47192F5F630088189A /* Build configuration list for PBXNativeTarget "AFViewShakerTests" */;
-			buildPhases = (
-				66273C2F192F5F630088189A /* Sources */,
-				66273C30192F5F630088189A /* Frameworks */,
-				66273C31192F5F630088189A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DDAEB10B1D7890580076D17C /* PBXTargetDependency */,
-			);
-			name = AFViewShakerTests;
-			productName = AFViewShakerTests;
-			productReference = 66273C33192F5F630088189A /* AFViewShakerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		DDAEB0E31D788F270076D17C /* AFViewShakerExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDAEB0F11D788F270076D17C /* Build configuration list for PBXNativeTarget "AFViewShakerExample" */;
@@ -255,6 +246,24 @@
 			productReference = DDAEB0FB1D788F6A0076D17C /* AFViewShaker.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		DDAEB10F1D78AF430076D17C /* AFViewShakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDAEB1181D78AF430076D17C /* Build configuration list for PBXNativeTarget "AFViewShakerTests" */;
+			buildPhases = (
+				DDAEB10C1D78AF430076D17C /* Sources */,
+				DDAEB10D1D78AF430076D17C /* Frameworks */,
+				DDAEB10E1D78AF430076D17C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DDAEB1171D78AF430076D17C /* PBXTargetDependency */,
+			);
+			name = AFViewShakerTests;
+			productName = AFViewShakerTests;
+			productReference = DDAEB1101D78AF430076D17C /* AFViewShakerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -265,10 +274,10 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = okolodev;
 				TargetAttributes = {
-					66273C32192F5F630088189A = {
-						TestTargetID = DDAEB0E31D788F270076D17C;
-					};
 					DDAEB0FA1D788F6A0076D17C = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DDAEB10F1D78AF430076D17C = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
@@ -286,21 +295,14 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66273C32192F5F630088189A /* AFViewShakerTests */,
 				DDAEB0E31D788F270076D17C /* AFViewShakerExample */,
 				DDAEB0FA1D788F6A0076D17C /* AFViewShaker */,
+				DDAEB10F1D78AF430076D17C /* AFViewShakerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		66273C31192F5F630088189A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		DDAEB0ED1D788F270076D17C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -318,16 +320,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		66273C2F192F5F630088189A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		DDAEB10E1D78AF430076D17C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
 		DDAEB0E41D788F270076D17C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,13 +349,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DDAEB10C1D78AF430076D17C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDAEB1131D78AF430076D17C /* AFViewShakerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DDAEB10B1D7890580076D17C /* PBXTargetDependency */ = {
+		DDAEB1171D78AF430076D17C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DDAEB0E31D788F270076D17C /* AFViewShakerExample */;
-			targetProxy = DDAEB10A1D7890580076D17C /* PBXContainerItemProxy */;
+			target = DDAEB0FA1D788F6A0076D17C /* AFViewShaker */;
+			targetProxy = DDAEB1161D78AF430076D17C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -448,46 +458,6 @@
 			};
 			name = Release;
 		};
-		66273C48192F5F630088189A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AFViewShaker/AFViewShaker-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "AFViewShakerTests/AFViewShakerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AFViewShakerExample.app/AFViewShakerExample";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		66273C49192F5F630088189A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AFViewShaker/AFViewShaker-Prefix.pch";
-				INFOPLIST_FILE = "AFViewShakerTests/AFViewShakerTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AFViewShakerExample.app/AFViewShakerExample";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 		DDAEB0F21D788F270076D17C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -574,6 +544,41 @@
 			};
 			name = Release;
 		};
+		DDAEB1191D78AF430076D17C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "AFViewShakerTests/AFViewShakerTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.okolodev.AFViewShakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DDAEB11A1D78AF430076D17C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "AFViewShakerTests/AFViewShakerTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.okolodev.AFViewShakerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -582,15 +587,6 @@
 			buildConfigurations = (
 				66273C42192F5F630088189A /* Debug */,
 				66273C43192F5F630088189A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		66273C47192F5F630088189A /* Build configuration list for PBXNativeTarget "AFViewShakerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				66273C48192F5F630088189A /* Debug */,
-				66273C49192F5F630088189A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -612,6 +608,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		DDAEB1181D78AF430076D17C /* Build configuration list for PBXNativeTarget "AFViewShakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DDAEB1191D78AF430076D17C /* Debug */,
+				DDAEB11A1D78AF430076D17C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
