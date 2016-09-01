@@ -4,7 +4,6 @@ machine:
 
 dependencies:
   pre:
-    - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     - brew install xctool
 
 test:
