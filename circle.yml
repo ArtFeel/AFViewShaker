@@ -4,7 +4,8 @@ machine:
 
 dependencies:
   pre:
-    - brew uninstall xctool && brew install xctool
+    - ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    - brew install xctool
 
 test:
   override:
