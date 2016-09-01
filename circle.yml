@@ -1,5 +1,16 @@
-general:
-  build_dir: Example
 machine:
   xcode:
-    version: 7.3
+    version: "7.3"
+
+test:
+  override:
+    - xctool
+      -reporter pretty
+      -reporter junit:$CIRCLE_TEST_REPORTS/xcode/results.xml
+      -reporter plain:$CIRCLE_ARTIFACTS/xctool.log
+      CODE_SIGNING_REQUIRED=NO
+      -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest'
+      -sdk iphonesimulator
+      -project Example/AFViewShaker.xcodeproj
+      -scheme "AFViewShakerTests"
+      build build-tests run-tests
