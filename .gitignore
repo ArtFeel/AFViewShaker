@@ -4,7 +4,7 @@
 # TextMate noise
 *.tm_build_errors
 
-# Xcode noise, 
+# Xcode noise,
 # https://github.com/github/gitignore/blob/master/Objective-C.gitignore
 *.pbxuser
 !default.pbxuser
@@ -28,6 +28,9 @@ tmp
 
 # CocoaPods
 Pods
+
+# Carthage
+Carthage
 
 # Cedar helper
 spec_arc_support.rb
