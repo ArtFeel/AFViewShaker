@@ -35,12 +35,14 @@ AFViewShaker * viewShaker = [[AFViewShaker alloc] initWithViewsArray:allFields];
 
 ## Installation
 
-### CocoaPods
+### Using CocoaPods
+Add the following to your `Podfile` and run `$ pod install`
 ```ruby
 pod "AFViewShaker", "~> 0.0.3"
 ```
 
-### Carthage
+### Using Carthage
+Add the following to your `Cartfile` and run `$ carthage update`
 ```ruby
 github "ArtFeel/AFViewShaker", ~> 0.0.3
 ```
