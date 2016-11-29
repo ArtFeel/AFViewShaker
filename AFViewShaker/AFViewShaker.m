@@ -12,7 +12,7 @@ static NSTimeInterval const kAFViewShakerDefaultDuration = 0.5;
 static NSString * const kAFViewShakerAnimationKey = @"kAFViewShakerAnimationKey";
 
 
-@interface AFViewShaker ()
+@interface AFViewShaker () <CAAnimationDelegate>
 @property (nonatomic, strong) NSArray * views;
 @property (nonatomic, assign) NSUInteger completedAnimations;
 @property (nonatomic, copy) void (^completionBlock)();
@@ -22,13 +22,13 @@ static NSString * const kAFViewShakerAnimationKey = @"kAFViewShakerAnimationKey"
 @implementation AFViewShaker
 
 - (instancetype)initWithView:(UIView *)view {
-    return [self initWithViewsArray:@[ view ]];
+    return [self initWithViewsArray:@[view]];
 }
 
 
 - (instancetype)initWithViewsArray:(NSArray *)viewsArray {
     self = [super init];
-    if ( self ) {
+    if (self) {
         self.views = viewsArray;
     }
     return self;
@@ -58,8 +58,14 @@ static NSString * const kAFViewShakerAnimationKey = @"kAFViewShakerAnimationKey"
     
     animation.delegate = self;
     animation.duration = duration;
-    animation.values = @[ @(currentTx), @(currentTx + 10), @(currentTx-8), @(currentTx + 8), @(currentTx -5), @(currentTx + 5), @(currentTx) ];
-    animation.keyTimes = @[ @(0), @(0.225), @(0.425), @(0.6), @(0.75), @(0.875), @(1) ];
+    animation.values = @[@(currentTx),
+                         @(currentTx + 10),
+                         @(currentTx - 8),
+                         @(currentTx + 8),
+                         @(currentTx - 5),
+                         @(currentTx + 5),
+                         @(currentTx)];
+    animation.keyTimes = @[@(0), @(0.225), @(0.425), @(0.6), @(0.75), @(0.875), @(1)];
     animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     [view.layer addAnimation:animation forKey:kAFViewShakerAnimationKey];
 }
@@ -69,9 +75,9 @@ static NSString * const kAFViewShakerAnimationKey = @"kAFViewShakerAnimationKey"
 
 - (void)animationDidStop:(CAAnimation *)animation finished:(BOOL)flag {
     self.completedAnimations += 1;
-    if ( self.completedAnimations >= self.views.count ) {
+    if (self.completedAnimations >= self.views.count) {
         self.completedAnimations = 0;
-        if ( self.completionBlock ) {
+        if (self.completionBlock) {
             self.completionBlock();
         }
     }
