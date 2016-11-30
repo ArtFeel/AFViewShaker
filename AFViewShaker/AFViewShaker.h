@@ -6,8 +6,7 @@
 //  Copyright (c) 2014 okolodev. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 
 @interface AFViewShaker : NSObject
 

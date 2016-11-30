@@ -1,5 +1,8 @@
 AFViewShaker
 =======
+[![CocoaPods](https://img.shields.io/cocoapods/v/AFViewShaker.svg)](http://cocoapods.org)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![license](https://img.shields.io/github/license/ArtFeel/AFViewShaker.svg)]()
 
 ## About
 AFViewShaker is simple as a brick utility for UIView shake animation.
@@ -30,10 +33,19 @@ AFViewShaker * viewShaker = [[AFViewShaker alloc] initWithViewsArray:allFields];
 }];
 ```
 
-## Installation with CocoaPods
-[CocoaPods](http://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like AFViewShaker in your projects.  
+## Installation
 
-##### Podfile
+### Using CocoaPods
+Add the following to your `Podfile` and run `$ pod install`
 ```ruby
-pod "AFViewShaker", "~> 0.0.2"
+pod "AFViewShaker", "~> 0.0.3"
 ```
+
+### Using Carthage
+Add the following to your `Cartfile` and run `$ carthage update`
+```ruby
+github "ArtFeel/AFViewShaker", ~> 0.0.3
+```
+
+## For Xamarin users
+If you are using [Xamarin.iOS](https://xamarin.com), check out [this](https://github.com/robert-waggott/Xamarin.ViewShaker) port by [Robert Waggott](https://github.com/robert-waggott).

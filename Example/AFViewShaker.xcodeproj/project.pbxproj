@@ -7,15 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		66273C16192F5F630088189A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66273C15192F5F630088189A /* Foundation.framework */; };
-		66273C18192F5F630088189A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66273C17192F5F630088189A /* CoreGraphics.framework */; };
-		66273C1A192F5F630088189A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66273C19192F5F630088189A /* UIKit.framework */; };
 		66273C20192F5F630088189A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 66273C1E192F5F630088189A /* InfoPlist.strings */; };
 		66273C22192F5F630088189A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66273C21192F5F630088189A /* main.m */; };
-		66273C35192F5F630088189A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66273C34192F5F630088189A /* XCTest.framework */; };
-		66273C36192F5F630088189A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66273C15192F5F630088189A /* Foundation.framework */; };
-		66273C37192F5F630088189A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66273C19192F5F630088189A /* UIKit.framework */; };
-		66273C4D192F61080088189A /* AFViewShaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 66273C4C192F61080088189A /* AFViewShaker.m */; };
+		9A1F40141D797EF60007C169 /* AFViewShaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A1F40131D797EF60007C169 /* AFViewShaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A1F40181D797EF60007C169 /* AFViewShaker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1F40111D797EF60007C169 /* AFViewShaker.framework */; };
+		9A1F40191D797EF60007C169 /* AFViewShaker.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1F40111D797EF60007C169 /* AFViewShaker.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A1F401F1D797F1C0007C169 /* AFViewShaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 66273C4C192F61080088189A /* AFViewShaker.m */; };
 		D45773C7DA8900E9143ADB87 /* AFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D45775DF59242252864A5FE9 /* AFViewController.m */; };
 		D4577496055E3A5B1409DF6F /* AFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4577BBA6E4CA47BC24B39B2 /* AFAppDelegate.m */; };
 		D4577A88F67F6AAB29038CEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D45771697EF142AB80D9E4FB /* Images.xcassets */; };
@@ -23,28 +20,40 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		66273C38192F5F630088189A /* PBXContainerItemProxy */ = {
+		9A1F40161D797EF60007C169 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 66273C0A192F5F630088189A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 66273C11192F5F630088189A;
+			remoteGlobalIDString = 9A1F40101D797EF60007C169;
 			remoteInfo = AFViewShaker;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9A1F401D1D797EF60007C169 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9A1F40191D797EF60007C169 /* AFViewShaker.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		66273C12192F5F630088189A /* AFViewShaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFViewShaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		66273C15192F5F630088189A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		66273C17192F5F630088189A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		66273C19192F5F630088189A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		66273C12192F5F630088189A /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66273C1D192F5F630088189A /* AFViewShaker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AFViewShaker-Info.plist"; sourceTree = "<group>"; };
 		66273C1F192F5F630088189A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		66273C21192F5F630088189A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		66273C23192F5F630088189A /* AFViewShaker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AFViewShaker-Prefix.pch"; sourceTree = "<group>"; };
-		66273C33192F5F630088189A /* AFViewShakerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFViewShakerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		66273C34192F5F630088189A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		66273C4B192F61080088189A /* AFViewShaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFViewShaker.h; sourceTree = "<group>"; };
 		66273C4C192F61080088189A /* AFViewShaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFViewShaker.m; sourceTree = "<group>"; };
+		9A1F40111D797EF60007C169 /* AFViewShaker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AFViewShaker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A1F40131D797EF60007C169 /* AFViewShaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFViewShaker.h; sourceTree = "<group>"; };
+		9A1F40151D797EF60007C169 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D45771697EF142AB80D9E4FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D457750E77EE0C7F2F2B4BCE /* AFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFViewController.h; sourceTree = "<group>"; };
 		D457755188B86B96D8F20DB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AFViewShaker/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
@@ -58,19 +67,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66273C18192F5F630088189A /* CoreGraphics.framework in Frameworks */,
-				66273C1A192F5F630088189A /* UIKit.framework in Frameworks */,
-				66273C16192F5F630088189A /* Foundation.framework in Frameworks */,
+				9A1F40181D797EF60007C169 /* AFViewShaker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66273C30192F5F630088189A /* Frameworks */ = {
+		9A1F400D1D797EF60007C169 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				66273C35192F5F630088189A /* XCTest.framework in Frameworks */,
-				66273C37192F5F630088189A /* UIKit.framework in Frameworks */,
-				66273C36192F5F630088189A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +86,7 @@
 			children = (
 				66273C4A192F60A80088189A /* AFViewShaker */,
 				66273C1B192F5F630088189A /* Example */,
-				66273C14192F5F630088189A /* Frameworks */,
+				9A1F40121D797EF60007C169 /* AFViewShaker */,
 				66273C13192F5F630088189A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,21 +94,10 @@
 		66273C13192F5F630088189A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				66273C12192F5F630088189A /* AFViewShaker.app */,
-				66273C33192F5F630088189A /* AFViewShakerTests.xctest */,
+				66273C12192F5F630088189A /* Example.app */,
+				9A1F40111D797EF60007C169 /* AFViewShaker.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		66273C14192F5F630088189A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				66273C15192F5F630088189A /* Foundation.framework */,
-				66273C17192F5F630088189A /* CoreGraphics.framework */,
-				66273C19192F5F630088189A /* UIKit.framework */,
-				66273C34192F5F630088189A /* XCTest.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		66273C1B192F5F630088189A /* Example */ = {
@@ -137,6 +130,15 @@
 			);
 			name = AFViewShaker;
 			path = ../AFViewShaker;
+			sourceTree = "<group>";
+		};
+		9A1F40121D797EF60007C169 /* AFViewShaker */ = {
+			isa = PBXGroup;
+			children = (
+				9A1F40131D797EF60007C169 /* AFViewShaker.h */,
+				9A1F40151D797EF60007C169 /* Info.plist */,
+			);
+			path = AFViewShaker;
 			sourceTree = "<group>";
 		};
 		D457712446128094C9AB1FB1 /* AppDelegate */ = {
@@ -177,14 +179,45 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		9A1F400E1D797EF60007C169 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A1F40141D797EF60007C169 /* AFViewShaker.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		66273C11192F5F630088189A /* AFViewShaker */ = {
+		66273C11192F5F630088189A /* Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 66273C44192F5F630088189A /* Build configuration list for PBXNativeTarget "AFViewShaker" */;
+			buildConfigurationList = 66273C44192F5F630088189A /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
 				66273C0E192F5F630088189A /* Sources */,
 				66273C0F192F5F630088189A /* Frameworks */,
 				66273C10192F5F630088189A /* Resources */,
+				9A1F401D1D797EF60007C169 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A1F40171D797EF60007C169 /* PBXTargetDependency */,
+			);
+			name = Example;
+			productName = AFViewShaker;
+			productReference = 66273C12192F5F630088189A /* Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A1F40101D797EF60007C169 /* AFViewShaker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A1F401A1D797EF60007C169 /* Build configuration list for PBXNativeTarget "AFViewShaker" */;
+			buildPhases = (
+				9A1F400C1D797EF60007C169 /* Sources */,
+				9A1F400D1D797EF60007C169 /* Frameworks */,
+				9A1F400E1D797EF60007C169 /* Headers */,
+				9A1F400F1D797EF60007C169 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -192,26 +225,8 @@
 			);
 			name = AFViewShaker;
 			productName = AFViewShaker;
-			productReference = 66273C12192F5F630088189A /* AFViewShaker.app */;
-			productType = "com.apple.product-type.application";
-		};
-		66273C32192F5F630088189A /* AFViewShakerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 66273C47192F5F630088189A /* Build configuration list for PBXNativeTarget "AFViewShakerTests" */;
-			buildPhases = (
-				66273C2F192F5F630088189A /* Sources */,
-				66273C30192F5F630088189A /* Frameworks */,
-				66273C31192F5F630088189A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				66273C39192F5F630088189A /* PBXTargetDependency */,
-			);
-			name = AFViewShakerTests;
-			productName = AFViewShakerTests;
-			productReference = 66273C33192F5F630088189A /* AFViewShakerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = 9A1F40111D797EF60007C169 /* AFViewShaker.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -220,11 +235,11 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = AF;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = okolodev;
 				TargetAttributes = {
-					66273C32192F5F630088189A = {
-						TestTargetID = 66273C11192F5F630088189A;
+					9A1F40101D797EF60007C169 = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
 				};
 			};
@@ -241,8 +256,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				66273C11192F5F630088189A /* AFViewShaker */,
-				66273C32192F5F630088189A /* AFViewShakerTests */,
+				66273C11192F5F630088189A /* Example */,
+				9A1F40101D797EF60007C169 /* AFViewShaker */,
 			);
 		};
 /* End PBXProject section */
@@ -258,7 +273,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66273C31192F5F630088189A /* Resources */ = {
+		9A1F400F1D797EF60007C169 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -273,26 +288,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				66273C22192F5F630088189A /* main.m in Sources */,
-				66273C4D192F61080088189A /* AFViewShaker.m in Sources */,
 				D45773C7DA8900E9143ADB87 /* AFViewController.m in Sources */,
 				D4577496055E3A5B1409DF6F /* AFAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		66273C2F192F5F630088189A /* Sources */ = {
+		9A1F400C1D797EF60007C169 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1F401F1D797F1C0007C169 /* AFViewShaker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		66273C39192F5F630088189A /* PBXTargetDependency */ = {
+		9A1F40171D797EF60007C169 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 66273C11192F5F630088189A /* AFViewShaker */;
-			targetProxy = 66273C38192F5F630088189A /* PBXContainerItemProxy */;
+			target = 9A1F40101D797EF60007C169 /* AFViewShaker */;
+			targetProxy = 9A1F40161D797EF60007C169 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -329,13 +344,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -348,7 +369,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -367,20 +388,25 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -394,6 +420,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AFViewShaker/AFViewShaker-Prefix.pch";
 				INFOPLIST_FILE = "AFViewShaker/AFViewShaker-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.okolodev.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -407,48 +435,66 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AFViewShaker/AFViewShaker-Prefix.pch";
 				INFOPLIST_FILE = "AFViewShaker/AFViewShaker-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.okolodev.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		66273C48192F5F630088189A /* Debug */ = {
+		9A1F401B1D797EF60007C169 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AFViewShaker.app/AFViewShaker";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AFViewShaker/AFViewShaker-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "AFViewShakerTests/AFViewShakerTests-Info.plist";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = AFViewShaker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.okolodev.AFViewShaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		66273C49192F5F630088189A /* Release */ = {
+		9A1F401C1D797EF60007C169 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AFViewShaker.app/AFViewShaker";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "AFViewShaker/AFViewShaker-Prefix.pch";
-				INFOPLIST_FILE = "AFViewShakerTests/AFViewShakerTests-Info.plist";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = AFViewShaker/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.okolodev.AFViewShaker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -464,7 +510,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66273C44192F5F630088189A /* Build configuration list for PBXNativeTarget "AFViewShaker" */ = {
+		66273C44192F5F630088189A /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				66273C45192F5F630088189A /* Debug */,
@@ -473,11 +519,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		66273C47192F5F630088189A /* Build configuration list for PBXNativeTarget "AFViewShakerTests" */ = {
+		9A1F401A1D797EF60007C169 /* Build configuration list for PBXNativeTarget "AFViewShaker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				66273C48192F5F630088189A /* Debug */,
-				66273C49192F5F630088189A /* Release */,
+				9A1F401B1D797EF60007C169 /* Debug */,
+				9A1F401C1D797EF60007C169 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
