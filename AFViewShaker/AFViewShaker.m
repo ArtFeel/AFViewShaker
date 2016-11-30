@@ -11,8 +11,13 @@
 static NSTimeInterval const kAFViewShakerDefaultDuration = 0.5;
 static NSString * const kAFViewShakerAnimationKey = @"kAFViewShakerAnimationKey";
 
-
+#if __IPHONE_OS_VERSION_MAX_ALLOWED < 100000
+// CAAnimationDelegate is not available before iOS 10 SDK
+@interface AFViewShaker ()
+#else
 @interface AFViewShaker () <CAAnimationDelegate>
+#endif
+
 @property (nonatomic, strong) NSArray * views;
 @property (nonatomic, assign) NSUInteger completedAnimations;
 @property (nonatomic, copy) void (^completionBlock)();
