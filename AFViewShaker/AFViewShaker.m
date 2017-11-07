@@ -20,7 +20,7 @@ static NSString * const kAFViewShakerAnimationKey = @"kAFViewShakerAnimationKey"
 
 @property (nonatomic, strong) NSArray * views;
 @property (nonatomic, assign) NSUInteger completedAnimations;
-@property (nonatomic, copy) void (^completionBlock)();
+@property (nonatomic, copy) void (^completionBlock)(void);
 @end
 
 
@@ -47,7 +47,7 @@ static NSString * const kAFViewShakerAnimationKey = @"kAFViewShakerAnimationKey"
 }
 
 
-- (void)shakeWithDuration:(NSTimeInterval)duration completion:(void (^)())completion {
+- (void)shakeWithDuration:(NSTimeInterval)duration completion:(void (^)(void))completion {
     self.completionBlock = completion;
     for (UIView * view in self.views) {
         [self addShakeAnimationForView:view withDuration:duration];

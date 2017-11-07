@@ -14,6 +14,6 @@
 - (instancetype)initWithViewsArray:(NSArray *)viewsArray;
 
 - (void)shake;
-- (void)shakeWithDuration:(NSTimeInterval)duration completion:(void (^)())completion;
+- (void)shakeWithDuration:(NSTimeInterval)duration completion:(void (^)(void))completion;
 
 @end
